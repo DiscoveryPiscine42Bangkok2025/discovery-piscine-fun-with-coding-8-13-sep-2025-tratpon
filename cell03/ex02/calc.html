@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>calc</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+    }
+    input, select, button {
+      padding: 8px;
+      margin: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Basic Calculator</h2>
+
+  <input type="text" id="left" placeholder="Left number">
+
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+
+  
+  <input type="text" id="right" placeholder="Right number">
+
+
+  <button id="calculate">Try me!</button>
+
+  <script>
+    const leftInput = document.getElementById("left");
+    const rightInput = document.getElementById("right");
+    const operatorSelect = document.getElementById("operator");
+    const button = document.getElementById("calculate");
+
+    button.addEventListener("click", () => {
+      const left = parseInt(leftInput.value);
+      const right = parseInt(rightInput.value);
+      const operator = operatorSelect.value;
+
+      if (isNaN(left) || isNaN(right) || left < 0 || right < 0) {
+        alert("Error :(");
+        return;
+      }
+
+      if ((operator === "/" || operator === "%") && right === 0) {
+        alert("It’s over 9000!");
+        console.log("It’s over 9000!");
+        return;
+      }
+
+      let result;
+      switch(operator) {
+        case "+": result = left + right; break;
+        case "-": result = left - right; break;
+        case "*": result = left * right; break;
+        case "/": result = left / right; break;
+        case "%": result = left % right; break;
+        default: result = "Error"; break;
+      }
+
+      alert("Result: " + result);
+      console.log("Result:", result);
+    });
+    
+    setInterval(() => {
+      alert("Please, use me...");
+    }, 30000);
+  </script>
+
+</body>
+</html>

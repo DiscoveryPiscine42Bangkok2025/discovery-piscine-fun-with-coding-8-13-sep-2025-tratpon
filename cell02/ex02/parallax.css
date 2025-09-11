@@ -1,0 +1,38 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.parallax {
+  height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.bg1 {
+  background-image: url('https://picsum.photos/id/1015/1200/800');
+}
+.bg2 {
+  background-image: url('https://picsum.photos/id/1016/1200/800');
+}
+
+.parallax h1 {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.section.black {
+  background: black;
+  color: white;
+  padding: 200px 20px;
+  text-align: center;
+}
+

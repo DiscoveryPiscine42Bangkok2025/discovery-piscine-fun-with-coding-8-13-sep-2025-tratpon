@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu label {
+  display: inline-block;
+  background: #ffdd99;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu input {
+  display: none;
+}
+
+.dropdown {
+  display: none;
+  margin-top: 6px;
+  padding: 0;
+}
+
+.dropdown li {
+  background: #eee;
+  padding: 6px 10px;
+  margin: 2px 0;
+  border-radius: 3px;
+}
+
+.menu input:checked + .dropdown {
+  display: block;
+}
+
