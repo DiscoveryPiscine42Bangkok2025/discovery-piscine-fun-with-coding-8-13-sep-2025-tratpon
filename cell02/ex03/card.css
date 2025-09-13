@@ -65,29 +65,30 @@ body {
     justify-content: center;
     gap: 15px;
     font-size: 20px;
-    color: #555;
     margin-top: 15px;
 }
 
-.icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #ccc;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 24px;
-    text-align: center;
-    cursor: pointer;
+.social-icons a {
+    color: #555;
+    transition: color 0.3s ease;
 }
 
+.social-icons a:hover {
+    color: #000;
+}
+
+.social-icons a:nth-child(1):hover { color: #ea4c89; } 
+.social-icons a:nth-child(2):hover { color: #1da1f2; } 
+.social-icons a:nth-child(3):hover { color: #0a66c2; } 
+.social-icons a:nth-child(4):hover { color: #1877f2; } 
+
 .contact-button {
+    display: block;
     width: 100%;
     background-color: black;
     color: white;
-    border: none;
+    text-decoration: none;
+    text-align: center;
     padding: 15px 0;
     font-size: 16px;
     cursor: pointer;

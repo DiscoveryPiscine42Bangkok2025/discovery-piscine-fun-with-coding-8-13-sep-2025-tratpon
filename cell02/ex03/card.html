@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card</title>
+    <title>User Profile Card</title>
+    <!-- ลิงก์ไปยัง CSS -->
     <link rel="stylesheet" href="card.css">
+    <!-- Font Awesome สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <h1 class="page-title">User Profile Card</h1>
 
     <div class="card">
         <div class="image-container">
-            <img class="profile-image"src="https://tiermaker.com/images/media/template_images/2024/17352663/2024-memes-august-17352663/lebron.png" alt="Profile Picture">
+            <img class="profile-image"
+                src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-6/312200768_1546569312461287_7201277977895613439_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFMQjwukFX0sNHdkUwMKWY9AnvG07-pUZECe8bTv6lRkZPnLUzSRh-0YLDOgss5uGOMQyGEUFzBZIyWdTr21YRp&_nc_ohc=EtTj9_-a9sYQ7kNvwGicVKt&_nc_oc=Adl6x4GTu74duLvxEStirquiVYrsvwZGEkLRp_BdByB48mgnVAilDAb1o10VnCXVpJJaRhhQJdwgtcgjxJxqgHG5&_nc_zt=23&_nc_ht=scontent.fbkk28-1.fna&_nc_gid=Wkkb43qkbmjeAEQZqUMakA&oh=00_AfYxhgUNENtSBcojQ1izYefv001VtA3YZCQATsF29YBLHQ&oe=68CAFBA4"
+                alt="Profile Picture">
         </div>
 
         <div class="content-container">
-            <h2 class="user-name">Wil 42</h2>
-            <p class="user-description">Level 25, The answer</p>
+            <h2 class="user-name">Benz 22</h2>
+            <p class="user-description">Level 10, The answer</p>
             <p class="school-name">42Paris</p>
 
             <div class="social-icons">
-                <i class="fab fa-dribbble"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-facebook-f"></i>
+                <a href="https://dribbble.com/yourusername" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.facebook.com/tratpon.dangaram" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
             </div>
         </div>
 
-        <button class="contact-button">Contact</button>
+        <!-- Contact Button (แก้ href ได้ เช่น mailto: หรือ ลิงก์ไปหน้าติดต่อ) -->
+        <a class="contact-button" href="mailto:you@example.com">Contact</a>
     </div>
-
 </body>
-
 </html>
